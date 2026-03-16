@@ -48,6 +48,7 @@ advent-of-code/
 ---
 ## ⭐ Progress
 > Last updated: March 2026
+> Working On: 2022 Day 5 Part 1
 <table>
   <tr>
     <th align="center">Total Progress:</th>
@@ -64,7 +65,7 @@ advent-of-code/
   <tr><td align="center">2025</td><td align="center">7*</td><td align="center">24</td></tr>
   <tr><td align="center">2024</td><td align="center">4*</td><td align="center">50</td></tr>
   <tr><td align="center">2023</td><td align="center">4*</td><td align="center">50</td></tr>
-  <tr><td align="center">2022</td><td align="center">11*</td><td align="center">50</td></tr>
+  <tr><td align="center">2022</td><td align="center">12*</td><td align="center">50</td></tr>
   <tr><td align="center">2021</td><td align="center">6*</td><td align="center">50</td></tr>
   <tr><td align="center">2020</td><td align="center">4*</td><td align="center">50</td></tr>
   <tr><td align="center">2019</td><td align="center">6*</td><td align="center">50</td></tr>
@@ -72,7 +73,7 @@ advent-of-code/
   <tr><td align="center">2017</td><td align="center">3*</td><td align="center">50</td></tr>
   <tr><td align="center">2016</td><td align="center">4*</td><td align="center">50</td></tr>
   <tr><td align="center">2015</td><td align="center">8*</td><td align="center">50</td></tr>
-  <tr><td align="center"><strong>Total</strong></td><td align="center"><strong>61*</strong></td><td align="center"><strong>524</strong></td></tr>
+  <tr><td align="center"><strong>Total</strong></td><td align="center"><strong>62*</strong></td><td align="center"><strong>524</strong></td></tr>
 </table>
 
 
