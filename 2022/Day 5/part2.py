@@ -45,31 +45,29 @@ for prompt in user_input:
                     if pos == "":
                         break
     else:
-        counter = 0
-        pos_arr = []
-        for n in range(1,num+1):
-            for i in range(len(array)):
+        pos_array = []
+        in_array = []
+        for i in range(len(array)-2,-1,-1):
+            pos = array[i][pick]
+            if pos != "   ":
                 if array[i] != extras:
-                    for c in range(2,count):
-                        pos = array[-c][pick]
-                        if pos != "   ":
-                            pos_arr.append(pos)
-                        elif pos == "   ":
-                            break
-                    if pos != "   ":
-                        for j in range(1, len(array)):
-                            new = array[-j][drop]    
-                            if new == "   ":
-                                array[-j][drop] = array[-c][pick]
-                                array[-c][pick] = "   "
-                                pos = ""
-                                break
-                    if pos == "":
-                        break
-    for row in array:
-        if row != extras:
-            print(row)
-    print("----------------------------------------------------------------")
+                    pos_array.append(pos)
+                    in_array.append(i)
+            elif pos == "   ":
+                break    
+        
+        for element in pos_array: # first element is the last stack
+            pos = pos_array[-num]
+            for j in range(1, len(array)):
+                new = array[-j][drop]    
+                if new == "   ":
+                    array[-j][drop] = pos_array[-num]
+                    array[in_array[-num]][pick] = "   "
+                    pos = ""
+                    break
+            num -= 1
+            if num == 0:
+                break
 
 message = ""
 for b in range(len(array[0])):
