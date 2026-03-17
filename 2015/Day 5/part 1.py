@@ -1,15 +1,5 @@
-#rules:
-    #at least three vowels (aeiou only)
-    #at least one letter that appears twice in a row, like xx
-    #does not contain the strings ab, cd, pq, or xy
-
+from input import user_input
 import re
-
-user_input = """ugknbfddgicrmopn
-aaa
-jchzalrnumimnmhp
-haegwjzuvuyypxyu
-dvszwmarrgswjxmb"""
 
 splitted = user_input.splitlines()
 
@@ -36,4 +26,4 @@ for i in new_list_2:
         new_list_3.append(i)
 
 nice = int(len(new_list_3))
-print(f"Nice: {nice}") #2
+print(f"Nice: {nice}")
