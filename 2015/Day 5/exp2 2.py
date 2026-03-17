@@ -1,34 +1,32 @@
 from file import input_file
 import re
-crate_order, user_input = input_file("exampleinput.txt")
+crate_order, user_input = input_file("puzzleinput.txt")
 
 # move 1 from 2 to 1
 # move (number of crates) from (pick location) to (drop location)
 
 array = []
-count = 0
-max = 0
+count = 0 
 lines = crate_order.splitlines()
 for line in lines:
     ln = []
     for i in range(0, len(line), 4):
-        newline = line[i:i+3]
-        if max < len(newline):
-            max = len(newline)
+        newline = line[i:i+3] # each crate
         if newline != "   ":
             count += 1
         ln.append(newline)        
     array.append(ln)
 
-count -= len(array[-1])
-length = len(array) - 1
-for i in range(0, length):
-    extras = ["   "] * max
+count -= (2 * len(array[-1])) # max box count
+length = len(array)
+for i in range(0, count):
+    extras = ["   "] * (length)
     array.insert(0, extras)
 
 for row in array:
-    print(row)
-print("----------------------")
+    if row != extras:
+        print(row)
+print("----------------------------------------------------------------")
 
 for prompt in user_input:
     prompt = re.split(r"\s+", prompt)
@@ -52,23 +50,34 @@ for prompt in user_input:
                     if pos == "":
                         break
     else:
-        for n in range(num):
-            for i in range(len(array)-2,-1,-1):
+        pos_array = []
+        in_array = []
+        for i in range(len(array)-2,-1,-1):
+            pos = array[i][pick]
+            if pos != "   ":
                 if array[i] != extras:
-                    pos = array[i][pick]
-                    if pos != "   ":
-                        for j in range(1, len(array)):
-                            new = array[-j][drop]    
-                            if new == "   ":
-                                array[-j][drop] = array[i][pick]
-                                array[i][pick] = "   "
-                                pos = ""
-                                break
-                    if pos == "":
-                        break
+                    pos_array.append(pos)
+                    in_array.append(i)
+            elif pos == "   ":
+                break    
+        
+        for element in pos_array: # first element is the last stack
+            pos = pos_array[-num]
+            for j in range(1, len(array)):
+                new = array[-j][drop]    
+                if new == "   ":
+                    array[-j][drop] = pos_array[-num]
+                    array[in_array[-num]][pick] = "   "
+                    pos = ""
+                    break
+            num -= 1
+            if num == 0:
+                break
+
     for row in array:
-        print(row)
-    print("----------------------")
+        if row != extras:
+            print(row)
+    print("----------------------------------------------------------------")
 
 message = ""
 for b in range(len(array[0])):
@@ -77,4 +86,4 @@ for b in range(len(array[0])):
         if place != "   ":
             message += array[a][b][1]
             break
-print(message) # MCD
+print(message)

@@ -1,34 +1,27 @@
 from file import input_file
 import re
-crate_order, user_input = input_file("exampleinput.txt")
+crate_order, user_input = input_file("puzzleinput.txt")
 
 # move 1 from 2 to 1
 # move (number of crates) from (pick location) to (drop location)
 
 array = []
-count = 0
-max = 0
+count = 0 
 lines = crate_order.splitlines()
 for line in lines:
     ln = []
     for i in range(0, len(line), 4):
-        newline = line[i:i+3]
-        if max < len(newline):
-            max = len(newline)
+        newline = line[i:i+3] # each crate
         if newline != "   ":
             count += 1
         ln.append(newline)        
     array.append(ln)
 
-count -= len(array[-1])
-length = len(array) - 1
-for i in range(0, length):
-    extras = ["   "] * max
+count -= (2 * len(array[-1])) # max box count
+length = len(array)
+for i in range(0, count):
+    extras = ["   "] * (length)
     array.insert(0, extras)
-
-#for row in array:
-#    print(row)
-#print("----------------------")
 
 for prompt in user_input:
     prompt = re.split(r"\s+", prompt)
@@ -50,9 +43,6 @@ for prompt in user_input:
                             break
                 if pos == "":
                     break
-    for row in array:
-        print(row)
-    print("----------------------")
 
 message = ""
 for b in range(len(array[0])):
@@ -61,4 +51,4 @@ for b in range(len(array[0])):
         if place != "   ":
             message += array[a][b][1]
             break
-print(message) # CMZ
+print(message)
