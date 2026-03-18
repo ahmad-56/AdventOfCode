@@ -47,12 +47,12 @@ advent-of-code/
 
 ---
 ## ⭐ Progress
-> Last updated: March 2026
-<br>Lastest Puzzle Solved: 2022 Day 5 Part 2
+> Last updated: 18th March 2026
+<br>Lastest Puzzle Solved: 2022 Day 8 Part 2
 <table>
   <tr>
     <th align="center">Total Progress:</th>
-    <th align="center">63*/524</th>
+    <th align="center">64*/524</th>
   </tr>
 </table>
 
@@ -65,7 +65,7 @@ advent-of-code/
   <tr><td align="center">2025</td><td align="center">7*</td><td align="center">24</td></tr>
   <tr><td align="center">2024</td><td align="center">4*</td><td align="center">50</td></tr>
   <tr><td align="center">2023</td><td align="center">4*</td><td align="center">50</td></tr>
-  <tr><td align="center">2022</td><td align="center">13*</td><td align="center">50</td></tr>
+  <tr><td align="center">2022</td><td align="center">14*</td><td align="center">50</td></tr>
   <tr><td align="center">2021</td><td align="center">6*</td><td align="center">50</td></tr>
   <tr><td align="center">2020</td><td align="center">4*</td><td align="center">50</td></tr>
   <tr><td align="center">2019</td><td align="center">6*</td><td align="center">50</td></tr>
@@ -73,7 +73,7 @@ advent-of-code/
   <tr><td align="center">2017</td><td align="center">3*</td><td align="center">50</td></tr>
   <tr><td align="center">2016</td><td align="center">4*</td><td align="center">50</td></tr>
   <tr><td align="center">2015</td><td align="center">8*</td><td align="center">50</td></tr>
-  <tr><td align="center">Total</td><td align="center">63*</td><td align="center">524</td></tr>
+  <tr><td align="center">Total</td><td align="center">64*</td><td align="center">524</td></tr>
 </table>
 
 
@@ -81,7 +81,6 @@ advent-of-code/
 
 - 🌐 [Advent of Code](https://adventofcode.com/)
 - 💬 [About AoC](https://adventofcode.com/2024/about)
-- 🐍 [Python Docs](https://docs.python.org/3/)
 
 ---
 
