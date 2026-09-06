@@ -5,8 +5,7 @@ from input import user_input
 splited = list(map(int, user_input.split()))
 for i in splited:
     for j in splited:
-        for k in splited:
-            if i + j + k == 2020:
-                answer = i*j*k
+        if i + j == 2020:
+            answer = i*j
 
 print(f"Answer: {answer}")
