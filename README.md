@@ -52,7 +52,7 @@ advent-of-code/
 <table>
   <tr>
     <th align="center">Total Progress:</th>
-    <th align="center">64*/524</th>
+    <th align="center">66*/524</th>
   </tr>
 </table>
 
@@ -72,8 +72,8 @@ advent-of-code/
   <tr><td align="center">2018</td><td align="center">4*</td><td align="center">50</td></tr>
   <tr><td align="center">2017</td><td align="center">3*</td><td align="center">50</td></tr>
   <tr><td align="center">2016</td><td align="center">4*</td><td align="center">50</td></tr>
-  <tr><td align="center">2015</td><td align="center">8*</td><td align="center">50</td></tr>
-  <tr><td align="center">Total</td><td align="center">64*</td><td align="center">524</td></tr>
+  <tr><td align="center">2015</td><td align="center">10*</td><td align="center">50</td></tr>
+  <tr><td align="center">Total</td><td align="center">66*</td><td align="center">524</td></tr>
 </table>
 
 
