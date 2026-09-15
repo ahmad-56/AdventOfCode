@@ -47,12 +47,12 @@ advent-of-code/
 
 ---
 ## ⭐ Progress
-> Last updated: 14th September 2026
-<br>Lastest Puzzle Solved: 2015 Day 6 Part 1 & 2
+> Last updated: 15th September 2026
+<br>Lastest Puzzle Solved: 2015 Day 9 Part 1 & 2
 <table>
   <tr>
     <th align="center">Total Progress:</th>
-    <th align="center">66*/524</th>
+    <th align="center">68*/524</th>
   </tr>
 </table>
 
@@ -72,8 +72,8 @@ advent-of-code/
   <tr><td align="center">2018</td><td align="center">4*</td><td align="center">50</td></tr>
   <tr><td align="center">2017</td><td align="center">3*</td><td align="center">50</td></tr>
   <tr><td align="center">2016</td><td align="center">4*</td><td align="center">50</td></tr>
-  <tr><td align="center">2015</td><td align="center">10*</td><td align="center">50</td></tr>
-  <tr><td align="center">Total</td><td align="center">66*</td><td align="center">524</td></tr>
+  <tr><td align="center">2015</td><td align="center">12*</td><td align="center">50</td></tr>
+  <tr><td align="center">Total</td><td align="center">68*</td><td align="center">524</td></tr>
 </table>
 
 
