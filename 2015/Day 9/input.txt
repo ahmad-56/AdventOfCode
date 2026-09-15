@@ -1,4 +1,4 @@
-user_input="""Faerun to Norrath = 129
+Faerun to Norrath = 129
 Faerun to Tristram = 58
 Faerun to AlphaCentauri = 13
 Faerun to Arbre = 24
@@ -25,4 +25,4 @@ Arbre to Tambi = 53
 Arbre to Straylight = 40
 Snowdin to Tambi = 15
 Snowdin to Straylight = 99
-Tambi to Straylight = 70"""
+Tambi to Straylight = 70
