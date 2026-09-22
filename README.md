@@ -2,7 +2,9 @@
 
 # Advent of Code — Solutions
 
-[Advent of Code](https://adventofcode.com/) is an annual coding event  contains puzzles. Each year starting from 1st Dec to 12th Dec, a two part puzzle with user specific input is uploaded and programmers have to solve each part to obtain a star. The ultimate goal is to collect as many stars as possible. One could team up with their friends and make a leaderboard to see who solved the most solutions first. 
+[Advent of Code](https://adventofcode.com/) is an annual programming event featuring two-part puzzles with user-specific inputs. 
+Since 2025, puzzles have been released daily from December 1 to December 12; earlier events ran for 25 days. Each completed part 
+awards one star. Participants can also create private leaderboards to compete with friends.
 
 AoC is a great platform to test and enhance your logical skills as it challenges you to think
 of creative solutions. The difficulty level is well balanced — beginners can solve the earlier
@@ -14,12 +16,18 @@ by writing my own piece of code and then implementing the same logic in the main
 
 I have made a separate section for the [folder structure](#-structure-of-folders), however I would just
 like to explain it a bit here as well.
-For each day there is an input which I store in a `.py` file (although now I am planning to
-use file handling with `.txt` files instead). Then I solve the example solution in a file
-named `exp.py`. This step is very essential in my opinion as it helps me find my mistakes by
+For each day there is an input which for which I create a `.txt` file (although previously I used to store 
+them in `.py` files). Then I solve the example solution to check if my reasoning and logic is correct. The sample code
+is saved in a file named `exp.py`. This step is very essential in my opinion as it helps me find my mistakes by
 debugging the smaller example input. However, as it is an example and may not contain all
 possible scenarios, it has its downsides too. Afterwards I implement the same solution on
-the main input.
+the main input. This file is therefore named after each part: `part1.py` / `part2.py`. 
+
+This structure is further explained below.
+
+Moreover I have shared all my progress in the [progress](#-progress) section. Previosuly I had to
+manually change the progress and update it whenever I solved a new probelm. However, now I use a python program
+which inputs the user the date and puzzle solved and automatically updates the `README` file.
 
 ---
 
