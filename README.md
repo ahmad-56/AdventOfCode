@@ -48,7 +48,7 @@ advent-of-code/
 ---
 ## ⭐ Progress
 > Last updated: 22nd September 2026
-<br>Lastest Puzzle Solved: 2017 Day 1 Part 1 & 2
+<br>Latest Puzzle Solved: 2017 Day 1 Part 1 & 2
 <table>
   <tr>
     <th align="center">Total Progress:</th>
