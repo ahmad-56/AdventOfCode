@@ -1,15 +1,22 @@
-user_input = """aa bb cc dd ee 
-aa bb cc dd aa
-aa bb cc dd aaa"""
+from input import user_input
 
 lines = user_input.splitlines()
 total_valid = len(lines)
 
 for line in lines:
     words = line.split()
-    for word in words:
-        counted = words.count(word)
-    if counted > 1:
-        total_valid -= 1
+    checked = False
 
-print(f"Total Valid Phrases: {total_valid}") #2
+    for w in range(len(words) - 1):
+        if checked:
+            break
+        for c in range(w + 1, len(words)):
+            word1 = words[w]
+            word2 = words[c]
+
+            if sorted(word1) == sorted(word2):
+                total_valid -= 1
+                checked = True
+                break
+
+print(f"Total Valid Phrases: {total_valid}")
